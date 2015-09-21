@@ -25,12 +25,17 @@ public class Startup {
         Employee emp3 = new SalariedEmployee(90000,0);
         
         
-        // High-level module
         HRService hr = new HRService();
+        Employee employees[] = {emp1, emp2, emp3};
 
-        // Just utility code to format numbers nice.
+        
         NumberFormat nf = NumberFormat.getCurrencyInstance();
-        System.out.println(emp1);
+        System.out.println(emp1.getAnnualWages());
+        
+        for(int i=0; i < employees.length; i++) {
+            System.out.println("Employee " + (i+1) + " compensation:" +
+            nf.format(hr.getAnnualCompensationForEmployee(employees[i])));
+        }
        
     }
 
