@@ -43,8 +43,11 @@ public class HourlyEmployee implements Employee {
 
     
     public final void setTotalHrsForYear(double totalHrsForYear) {
-        if(totalHrsForYear < 0 || totalHrsForYear > 2080) {
-            System.out.println("You have overtime or have not worked");
+        if(totalHrsForYear > 2080) {
+            System.out.println("You have overtime, good job");
+        } else if (totalHrsForYear < 1) {
+            System.out.println("You have not worked slacker");
+            
         }
         this.totalHrsForYear = totalHrsForYear;
     }    
