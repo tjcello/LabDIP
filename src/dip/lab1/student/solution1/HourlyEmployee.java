@@ -16,20 +16,20 @@ public class HourlyEmployee implements Employee {
     }
     
     @Override
-     public double getAnnualWages() {
+     public final double getAnnualWages() {
         return hourlyRate * totalHrsForYear;
     }
 
-    public double getHourlyRate() {
+    public final double getHourlyRate() {
         return hourlyRate;
     }
 
-    public void setHourlyRate(double hourlyRate) {
+    public final void setHourlyRate(double hourlyRate) {
         if (hourlyRate < 0 || hourlyRate > 500){
             throw new IllegalArgumentException();
     }
     }
-    public double getTotalHrsForYear() {
+    public final double getTotalHrsForYear() {
         return totalHrsForYear;
     }
 
