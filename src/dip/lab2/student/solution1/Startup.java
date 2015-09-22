@@ -12,7 +12,7 @@ public class Startup {
      
     public static void main(String[] args) {
         
-        Service tipService = new Service(new BaggageServiceTipCalculator(ServiceQuality.GOOD, 5));
+        Service tipService = new Service(new FoodServiceTipCalculator(ServiceQuality.GOOD, 100));
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         System.out.println(nf.format(tipService.getTip()));
         
