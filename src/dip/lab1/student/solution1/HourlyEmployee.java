@@ -33,7 +33,9 @@ public class HourlyEmployee implements Employee {
         return totalHrsForYear;
     }
 
-    
+    /*
+    *Set hours to account for overtime and not working
+    */
     public final void setTotalHrsForYear(double totalHrsForYear) {
         if(totalHrsForYear > 2080) {
             System.out.println("You have overtime, good job");

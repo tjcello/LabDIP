@@ -12,9 +12,9 @@ public class Startup {
      
     public static void main(String[] args) {
         
-        Service tipService = new Service(new FoodServiceTipCalculator(ServiceQuality.GOOD, 100));
+        Service tipService = new Service(new FoodServiceTipCalculator(ServiceQuality.FAIR, 60));
         NumberFormat nf = NumberFormat.getCurrencyInstance();
-        System.out.println(nf.format(tipService.getTip()));
+        System.out.println("Your tip was " + nf.format(tipService.getTip()));
         
     }
 
