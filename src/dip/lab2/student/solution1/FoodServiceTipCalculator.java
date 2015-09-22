@@ -25,7 +25,9 @@ public class FoodServiceTipCalculator implements TipCalculator {
         this.setBill(billAmt);
     }
 
-    public double getTip() {
+    
+    @Override
+    public final double getTip() {
         double tip = 0.00; // always initialize local variables
 
         switch(serviceQuality) {
@@ -55,8 +57,6 @@ public class FoodServiceTipCalculator implements TipCalculator {
         serviceQuality = q;
     }
 
-    public ServiceQuality getServiceQuality() {
-        return serviceQuality;
-    }
+    
 
 }

@@ -10,5 +10,5 @@ package dip.lab2.student.solution1;
  * @author Thomas
  */
 public interface TipCalculator {
-    
+    public abstract double getTip();
 }
