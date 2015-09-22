@@ -13,7 +13,7 @@ public class Copier {
 		this.writer = writer;
 	}
 
-	public void copy() {
+	public final void copy() {
             String line = reader.readln();
             writer.writeln( line );
 	}
