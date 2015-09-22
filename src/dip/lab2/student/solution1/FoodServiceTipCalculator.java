@@ -1,20 +1,15 @@
 package dip.lab2.student.solution1;
 
 /**
- * An example low-level class. Does this class definition follow the DIP?
- * If not, fix it.
- *
- * Any other best practice violations? Fix them too.
- *
- * @author your name goes here
+ * @author Thomas Duwe
  */
 public class FoodServiceTipCalculator implements TipCalculator {
-    private double minBill = 0.00;
-    private String billEntryErr =
+    private final double minBill = 0.00;
+    private final String billEntryErr =
             "Error: bill must be greater than or equal to " + minBill;
-    private double goodRate = 0.20;
-    private double fairRate = 0.15;
-    private double poorRate = 0.10;
+    private final double goodRate = 0.20;
+    private final double fairRate = 0.15;
+    private final double poorRate = 0.10;
 
     private double bill;
    
@@ -28,7 +23,7 @@ public class FoodServiceTipCalculator implements TipCalculator {
     
     @Override
     public final double getTip() {
-        double tip = 0.00; // always initialize local variables
+        double tip = 0.00; 
 
         switch(serviceQuality) {
             case GOOD:
@@ -53,7 +48,6 @@ public class FoodServiceTipCalculator implements TipCalculator {
     }
 
     public final void setServiceRating(ServiceQuality q) {
-        // No need to validate because enums provide type safety!
         serviceQuality = q;
     }
 

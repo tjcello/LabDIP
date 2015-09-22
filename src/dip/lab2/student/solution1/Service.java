@@ -7,6 +7,7 @@ package dip.lab2.student.solution1;
 
     public class Service {
     private TipCalculator tipCalc;
+    
     public Service() {
     }
 

@@ -1,19 +1,15 @@
 package dip.lab2.student.solution1;
 
 /**
- * An example low-level class. Does this class definition follow the DIP?
- * If not, fix it.
- *
- * Any other best practice violations? Fix them too.
- *
- * @author your name goes here
+
+ * @author Thomas Duwe
  */
 public class BaggageServiceTipCalculator implements TipCalculator {
     private double minBill = 0.00;
     private double maxBill = 100.00;
-    private String billEntryErr =
-            "Error: bill must be between " + minBill + " and "
-            + maxBill;
+//    private String billEntryErr =
+//            "Error: bill must be between " + minBill + " and "
+//            + maxBill;
     private double goodRate = 0.20;
     private double fairRate = 0.15;
     private double poorRate = 0.10;
