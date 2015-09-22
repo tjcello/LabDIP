@@ -4,7 +4,7 @@ package dip.lab2.student.solution1;
  * @author Thomas Duwe
  */
 public class FoodServiceTipCalculator implements TipCalculator {
-    private final double minBill = 0.00;
+    private final double minBill = 10.00;
     private final String billEntryErr =
             "Error: bill must be greater than or equal to " + minBill;
     private final double goodRate = 0.20;
