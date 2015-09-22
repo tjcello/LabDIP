@@ -1,4 +1,4 @@
-package dip.lab2;
+package dip.lab2.student.solution1;
 
 /**
  * An example low-level class. Does this class definition follow the DIP?
@@ -13,8 +13,8 @@ public class FoodServiceTipCalculator implements TipCalculator {
     private String billEntryErr =
             "Error: bill must be greater than or equal to " + minBill;
     private double goodRate = 0.20;
-    private double FAIR_RATE = 0.15;
-    private double POOR_RATE = 0.10;
+    private double fairRate = 0.15;
+    private double poorRate = 0.10;
 
     private double bill;
    
@@ -33,10 +33,10 @@ public class FoodServiceTipCalculator implements TipCalculator {
                 tip = bill * goodRate;
                 break;
             case FAIR:
-                tip = bill * FAIR_RATE;
+                tip = bill * fairRate;
                 break;
             case POOR:
-                tip = bill * POOR_RATE;
+                tip = bill * poorRate;
                 break;
         }
 
