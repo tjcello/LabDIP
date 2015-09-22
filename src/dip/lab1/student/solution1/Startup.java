@@ -19,8 +19,8 @@ public class Startup {
         
         
         for(int i=0; i < employees.length; i++) {
-            System.out.println("Employee " + (i+1) + " compensation:" + 
-                    (humanResources.getAnnualCompensationForEmployee(employees[i])));
+            System.out.println("Employee " + (i+1) + " income:" + 
+                    (humanResources.getAnnualIncome(employees[i])));
         }
        
     }
