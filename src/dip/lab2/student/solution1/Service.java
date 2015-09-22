@@ -2,7 +2,6 @@
 package dip.lab2.student.solution1;
 
 /**
- *
  * @author Thomas
  */
 
@@ -15,26 +14,17 @@ package dip.lab2.student.solution1;
         this.tipCalc = tipCalc;
     }
 
-    /**
-     *
-     * @return tipCalc
-     */
+    
     public final TipCalculator getTipCalc() {
         return tipCalc;
     }
 
-    /**
-     *sets tipCalc to what is passed in
-     * @param tipCalc
-     */
+    
     public final void setTipCalc(TipCalculator tipCalc) {
         this.tipCalc = tipCalc;
     }
     
-    /**
-     *
-     * @return tip using the set tipCalc
-     */
+    
     public final double getTip(){
         return tipCalc.getTip();
     }

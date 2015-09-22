@@ -7,7 +7,7 @@ package dip.lab1.student.solution1;
 public class SalariedEmployee implements Employee {
     private double annualSalary;
     private double annualBonus;
-    /** default constructor. Is this the best way to go? */
+    
     public SalariedEmployee() {}
 
     
