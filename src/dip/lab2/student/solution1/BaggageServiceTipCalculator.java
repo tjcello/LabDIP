@@ -5,7 +5,7 @@ package dip.lab2.student.solution1;
  * @author Thomas Duwe
  */
 public class BaggageServiceTipCalculator implements TipCalculator {
-    private double minBill = 0.00;
+    private double minBill = 10.00;
     private double maxBill = 100.00;
 //    private String billEntryErr =
 //            "Error: bill must be between " + minBill + " and "
